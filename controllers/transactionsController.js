@@ -1,10 +1,9 @@
 const Transaction = require("../models/Transaction");
 // we can use Mongoose methods - these returns promise too!!!
 
-// @desc Get all transactions
-// @route /api/v1/transactions
-// @access Public
-
+// @desc    Get all transactions
+// @route   GET /api/v1/transactions
+// @access  Public
 exports.getTransactions = async (req, res, next) => {
 	try {
 		const transactions = await Transaction.find();
@@ -20,13 +19,11 @@ exports.getTransactions = async (req, res, next) => {
 			error: "Server Error",
 		});
 	}
-	res.send("GET transactions");
 };
 
-// @desc Add transactions
-// @route POST /api/v1/transactions
-// @access Public
-
+// @desc    Add transaction
+// @route   POST /api/v1/transactions
+// @access  Public
 exports.addTransaction = async (req, res, next) => {
 	try {
 		const { text, amount } = req.body;
@@ -54,10 +51,30 @@ exports.addTransaction = async (req, res, next) => {
 	}
 };
 
-// @desc Delete transactions
-// @route DELETE /api/v1/transactions/:id
-// @access Public
-
+// @desc    Delete transaction
+// @route   DELETE /api/v1/transactions/:id
+// @access  Public
 exports.deleteTransaction = async (req, res, next) => {
-	res.send("DELETE transaction");
+	try {
+		const transaction = await Transaction.findById(req.params.id);
+
+		if (!transaction) {
+			return res.status(404).json({
+				success: false,
+				error: "No transaction found",
+			});
+		}
+
+		await transaction.remove();
+
+		return res.status(200).json({
+			success: true,
+			data: {},
+		});
+	} catch (err) {
+		return res.status(500).json({
+			success: false,
+			error: "Server Error",
+		});
+	}
 };

@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
-// makin any calls with Mongoose to connect / find / always returns a promise
+// making any calls with Mongoose to connect / find / always returns a promise
 const connectDB = async () => {
 	try {
 		const conn = await mongoose.connect(process.env.MONGO_URI, {
 			useNewUrlParser: true,
-			// useCreateIndex: true,
+			useCreateIndex: true,
 			useUnifiedTopology: true,
 		});
 
