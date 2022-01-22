@@ -12,7 +12,7 @@ export const Transaction = ({ transaction }) => {
 		<li className={transaction.amount < 0 ? "minus" : "plus"}>
 			{transaction.text}{" "}
 			<span>
-				{sign}${numberWithCommas(Math.abs(transaction.amount))}
+				{sign}€{numberWithCommas(Math.abs(transaction.amount))}
 			</span>
 			<button
 				className='delete-btn'

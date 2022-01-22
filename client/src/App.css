@@ -9,7 +9,7 @@
 }
 
 body {
-	background-color: #f7f7f7;
+	background-color: #757575;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -21,14 +21,22 @@ body {
 
 .container {
 	margin: 30px auto;
-	width: 350px;
-	background-color: #f7f7f7;
-	border: 2px solid #757575;
-	border-radius: 2%;
+	width: 390px;
+	background-image: linear-gradient(
+		to bottom right,
+		rgb(82, 82, 86),
+		rgb(189, 208, 198)
+	);
+	border: 5px solid #c9e0ca;
+	border-radius: 25px;
 	box-shadow: #757575;
-	padding: 10px;
+	padding: 22px;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
 		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#appname {
+	text-align: center;
 }
 
 h1 {
@@ -48,7 +56,7 @@ h4 {
 }
 
 .inc-exp-container {
-	background-color: #fff;
+	background-color: rgb(132, 130, 141);
 	box-shadow: var(--box-shadow);
 	padding: 20px;
 	display: flex;
@@ -97,7 +105,7 @@ input[type="number"] {
 .btn {
 	cursor: pointer;
 	outline: 1px solid #000000;
-	background: #c0c0c0;
+	background: rgb(132, 130, 141);
 	border-width: 1px;
 	border-style: solid;
 	border-color: #ffffff #808080 #808080;
