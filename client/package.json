@@ -1,7 +1,8 @@
 {
-  "name": "mern-stack",
+  "name": "managewisely",
   "version": "0.1.0",
   "private": true,
+  "homepage": "gaborsimonits.github.io/managewisely",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -16,11 +17,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
+
       "react-app/jest"
     ]
   },

@@ -1,22 +1,28 @@
 {
-  "name": "mern-stack",
+  "name": "managewisely",
   "version": "1.0.0",
+  "homepage": "https://github.com/gaborsimonits/managewisely",
   "description": "Backend for expense tracker",
   "main": "server.js",
   "scripts": {
     "start": "node server",
     "server": "nodemon server",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Gabor Simonits",
   "license": "ISC",
   "dependencies": {
+    "-": "^0.0.1",
     "colors": "^1.4.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "gh-pages": "^3.2.3",
     "mongoose": "^6.1.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
     "concurrently": "^6.4.0",
