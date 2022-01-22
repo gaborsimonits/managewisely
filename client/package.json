@@ -2,7 +2,7 @@
   "name": "managewisely",
   "version": "0.1.0",
   "private": true,
-  "homepage": "gaborsimonits.github.io/managewisely",
+  "homepage": "https://gaborsimonits.github.io/managewisely/",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.1",
@@ -16,6 +16,8 @@
     "save-dev": "^0.0.1-security",
     "web-vitals": "^2.1.2"
   },
+
+  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
