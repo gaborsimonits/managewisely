@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/gaborsimonits.github.io/managewisely/static/css/main.62b4b504.css",
-    "main.js": "/gaborsimonits.github.io/managewisely/static/js/main.f69a380c.js",
-    "index.html": "/gaborsimonits.github.io/managewisely/index.html",
-    "main.62b4b504.css.map": "/gaborsimonits.github.io/managewisely/static/css/main.62b4b504.css.map",
-    "main.f69a380c.js.map": "/gaborsimonits.github.io/managewisely/static/js/main.f69a380c.js.map"
+    "main.css": "/managewisely/static/css/main.62b4b504.css",
+    "main.js": "/managewisely/static/js/main.f69a380c.js",
+    "index.html": "/managewisely/index.html",
+    "main.62b4b504.css.map": "/managewisely/static/css/main.62b4b504.css.map",
+    "main.f69a380c.js.map": "/managewisely/static/js/main.f69a380c.js.map"
   },
   "entrypoints": [
     "static/css/main.62b4b504.css",
